@@ -1,0 +1,48 @@
+.btn{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.start{
+display: flex;
+justify-content: center;
+align-items: center;
+border: none;
+border-radius: 8px;
+background-color: black;
+color: white;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+padding: 8px 12px;
+}
+
+.start:hover{
+cursor: pointer;
+transform: scale(1.2);
+box-shadow: 0 6px 12px rgba(0,0,0,0.35);
+}
+
+.start:active{
+transform: scale(1);
+box-shadow: 0 0 0 rgba(0,0,0,0);
+}
+
+.plane{
+position: relative;
+left:-300px;
+width: 120px;
+transition: transform 0.3s;
+}
+
+.fly{
+animation: fly 3s linear forwards;
+}
+
+@keyframes fly{
+0%{
+left: -300px;
+}
+100%{
+left: 1000px;
+}
+}
